@@ -1,0 +1,11 @@
+.contact {
+  background-color: salmon;
+
+  // grid-row: contact;
+  // grid-column: contact;
+  grid-area: contact;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}

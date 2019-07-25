@@ -1,0 +1,112 @@
+.home {
+  background-color: aqua;
+  grid-row: home;
+  grid-column: home;
+  grid-area: home;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg) center center / cover,
+    #333;
+
+  // background-image: url(/images/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  li,
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 20;
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+  .nav {
+    grid-column: 3 / 5;
+    text-align: center;
+
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 10%;
+      list-style: none;
+    }
+  }
+  .logo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+  }
+
+  .welcome-text1 {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+    margin-top: 22px;
+    text-align: center;
+  }
+
+  .welcome-text {
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    margin-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+
+  .scroll-downs {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+  }
+}

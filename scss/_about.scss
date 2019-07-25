@@ -1,0 +1,32 @@
+.about {
+  background-color: white;
+
+  // grid-row: about;
+  // grid-column: about;
+  grid-area: about;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  .card-box {
+    grid-column: 4 / 6;
+
+    border-color: aqua;
+
+    border-width: 100px;
+
+    .pro-pic {
+      height: 250px;
+    }
+  }
+
+  .about-me {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .language_pic {
+    height: 35px;
+  }
+}

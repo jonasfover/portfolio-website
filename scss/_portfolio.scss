@@ -1,0 +1,11 @@
+.portfolio {
+  background-color: goldenrod;
+
+  // grid-row: portfolio;
+  // grid-column: portfolio;
+  grid-area: portfolio;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
